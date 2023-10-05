@@ -1,0 +1,42 @@
+﻿@model IEnumerable<ExamApi07.Models.Invoice>
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+
+<div class="row">
+    <div class="col">
+        <table class="table table-bordered">
+            <thead class="alert-primary">
+                <tr>
+
+                    <th>InvoiceId</th>
+                    <th>InvoiceTotal</th>
+                    <th>PaymentTotal</th>
+                    <th>VendorId</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+
+                        <td>@Html.DisplayFor(x => item.InvoiceID))</td>
+                        <td>@Html.DisplayFor(x => item.InvoiceTotal)</td>
+                        <td>@Html.DisplayFor(x => item.PaymentTotal)</td>
+                        <td>@Html.DisplayFor(x => item.VendorID)</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <div class="card bg-warning">
+            max:@ViewData["maxs"]<br />
+            min:@ViewData["mins"]<br />
+            AVG:@ViewData["AVG"]<br />
+            Count:@ViewData["count"]<br />
+            Total Invoice:@ViewData["sum"]
+        </div>
+    </div>
+</div>

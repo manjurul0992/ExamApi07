@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="69c67b8c95574560bd095968cfa6f4e8" Name="Diagram1">
+        <EntityTypeShape EntityType="APModel.GLAccount" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="APModel.InvoiceLineItem" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="APModel.Invoice" Width="1.5" PointX="8.25" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="APModel.Term" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="APModel.Vendor" Width="1.5" PointX="6" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="APModel.ContactUpdate" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="APModel.InvoiceArchive" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <AssociationConnector Association="APModel.FK_InvoiceLineItems_GLAccounts" ManuallyRouted="false" />
+        <AssociationConnector Association="APModel.FK_Vendors_GLAccounts" ManuallyRouted="false" />
+        <AssociationConnector Association="APModel.FK_InvoiceLineItems_Invoices" ManuallyRouted="false" />
+        <AssociationConnector Association="APModel.FK_Invoices_Terms" ManuallyRouted="false" />
+        <AssociationConnector Association="APModel.FK_Invoices_Vendors" ManuallyRouted="false" />
+        <AssociationConnector Association="APModel.FK_Vendors_Terms" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
